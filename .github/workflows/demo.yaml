@@ -15,6 +15,6 @@ jobs:
       SUPER_SECRET: ${{ secrets.FLAG }}
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo hello issue ${{ github.event.issue.title }}
+        run: echo "hello issue ${{ github.event.issue.title }}"
         env:
           First_Name: Mona
