@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
+      SUPER_SECRET: ${{ secrets.SuperSecret }}
     steps:
       - name: "Say Hello Mona it's Monday"
         run: echo "${{ github.event.pull_request.title }}"
